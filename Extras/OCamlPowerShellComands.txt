@@ -1,0 +1,5 @@
+To use the OCaml compiler in PowerShell, you need to run the following commands to set up the environment:
+(& opam env) -split '\r?\n' | ForEach-Object { Invoke-Expression $_ }
+
+To switch between different versions of the OCaml compiler, you can use the following command:
+opam switch
